@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/unitprice"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/unitprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="unitprice"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@id/quantity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="quantity"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/unitprice"
+        app:layout_constraintEnd_toStartOf="@id/totalprice"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="totalprice"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
